@@ -1,0 +1,5 @@
+Mesajını SimpleExample.java içinde tekrar "Makbule..." olarak değiştir.
+Terminalde:
+cd /Users/makbuleozler/Desktop/denemeKodlar/NTRU1/ntru-master
+mvn compile
+mvn exec:java -Dexec.mainClass="net.sf.ntru.demo.SimpleExample"

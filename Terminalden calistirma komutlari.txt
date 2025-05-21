@@ -1,0 +1,95 @@
+makbuleozler@makbule-MacBook-Air ntru-master % 
+makbuleozler@makbule-MacBook-Air ntru-master % mvn compile
+
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for net.sf.ntru:ntru:jar:1.2
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-gpg-plugin is missing. @ line 68, column 15
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ line 63, column 15
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ line 88, column 15
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-javadoc-plugin is missing. @ line 101, column 15
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-resources-plugin is missing. @ line 55, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] --------------------------< net.sf.ntru:ntru >--------------------------
+[INFO] Building NTRU 1.2
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-1: The plugin org.apache.maven.plugins:maven-source-plugin:4.0.0-beta-1 requires Maven version 4.0.0-beta-3
+[INFO] Latest version of plugin org.apache.maven.plugins:maven-source-plugin failed compatibility check
+[INFO] Looking for compatible RELEASE version of plugin org.apache.maven.plugins:maven-source-plugin
+[INFO] Selected plugin org.apache.maven.plugins:maven-source-plugin:3.3.1
+[INFO] 
+[INFO] --- enforcer:1.0:enforce (enforce-maven) @ ntru ---
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ ntru ---
+[INFO] skip non existing resourceDirectory /Users/makbuleozler/Desktop/denemeKodlar/NTRU1/ntru-master/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ ntru ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 38 source files with javac [debug target 17] to target/classes
+[WARNING] location of system modules is not set in conjunction with -source 17
+  not setting the location of system modules may lead to class files that cannot run on JDK 17
+    --release 17 is recommended instead of -source 17 -target 17 because it sets the location of system modules automatically
+[WARNING] /Users/makbuleozler/Desktop/denemeKodlar/NTRU1/ntru-master/src/main/java/net/sf/ntru/sign/NtruSign.java:[78,12] deprecated item is not annotated with @Deprecated
+[INFO] /Users/makbuleozler/Desktop/denemeKodlar/NTRU1/ntru-master/src/main/java/net/sf/ntru/sign/Basis.java: Some input files use or override a deprecated API.
+[INFO] /Users/makbuleozler/Desktop/denemeKodlar/NTRU1/ntru-master/src/main/java/net/sf/ntru/sign/Basis.java: Recompile with -Xlint:deprecation for details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.843 s
+[INFO] Finished at: 2025-05-11T13:08:30+03:00
+[INFO] ------------------------------------------------------------------------
+makbuleozler@makbule-MacBook-Air ntru-master % 
+makbuleozler@makbule-MacBook-Air ntru-master % 
+makbuleozler@makbule-MacBook-Air ntru-master % 
+makbuleozler@makbule-MacBook-Air ntru-master % 
+makbuleozler@makbule-MacBook-Air ntru-master % 
+makbuleozler@makbule-MacBook-Air ntru-master % 
+makbuleozler@makbule-MacBook-Air ntru-master % 
+makbuleozler@makbule-MacBook-Air ntru-master % mvn exec:java -Dexec.mainClass="net.sf.ntru.demo.SimpleExample"
+
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for net.sf.ntru:ntru:jar:1.2
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-gpg-plugin is missing. @ line 68, column 15
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ line 63, column 15
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ line 88, column 15
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-javadoc-plugin is missing. @ line 101, column 15
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-resources-plugin is missing. @ line 55, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-1: The plugin org.apache.maven.plugins:maven-source-plugin:4.0.0-beta-1 requires Maven version 4.0.0-beta-3
+[INFO] Latest version of plugin org.apache.maven.plugins:maven-source-plugin failed compatibility check
+[INFO] Looking for compatible RELEASE version of plugin org.apache.maven.plugins:maven-source-plugin
+[INFO] Selected plugin org.apache.maven.plugins:maven-source-plugin:3.3.1
+[INFO] 
+[INFO] --------------------------< net.sf.ntru:ntru >--------------------------
+[INFO] Building NTRU 1.2
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec:3.5.0:java (default-cli) @ ntru ---
+NTRU encryption
+  Before encryption: Makbule'nin kuantum şifreleme testi 
+  After decryption:  Makbule'nin kuantum şifreleme testi 
+
+NTRU signature
+  Message: The quick brown fox
+  Signature valid? true
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.392 s
+[INFO] Finished at: 2025-05-11T13:08:39+03:00
+[INFO] ------------------------------------------------------------------------
+makbuleozler@makbule-MacBook-Air ntru-master % 
